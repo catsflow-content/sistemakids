@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "baseUrl": "./*",
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "./config/src/**/*.ts",
+    "./config/src/**/*.tsx",
+    "./config/src/vite-env.d.ts"
+  ],
+  "path": {
+    "@/*": ["./config/src/*"]
+  },
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,177 @@
+
+.kids ._main {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2.5rem;
+
+  padding: 3rem 0.2rem;
+}
+
+.kids ._login ._header .return,
+.kids ._dash ._header .return {
+  display: none !important;
+}
+
+.kids ._user h1,
+.kids ._user h4,
+.kids ._user ._btn,
+._np ._div {
+  text-align: center;
+}
+
+/* Home */
+.kids ._home {
+  background-image: url(../image/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+/* Login */
+.kids ._login ._card {
+  width: 18rem;
+  margin: auto;
+}
+
+/* Turmas */
+.kids ._turma ._card.tools h2 {
+  font-size: 1.1rem;
+}
+
+.kids ._turma ._card.alunos .cad {
+  width: 100%;
+}
+
+/* Gerenciar aulas */
+.kids ._geaula ._card.aulas ._btn {
+  font-size: 1.06rem !important;
+}
+
+/* Notas */
+.kids ._notes ._card h2 {
+  text-align: start;
+}
+
+.kids ._notes ._card p {
+  text-align: justify;
+
+  font-size: 1.1rem;
+}
+
+/* Loader */
+.load {
+  display: grid;
+  place-content: center;
+
+  height: 100vh;
+}
+
+.loader {
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 10px;
+  background: var(--color-11);
+  border-radius: var(--br);
+  animation: load 1.8s ease-in-out infinite;
+}
+
+.loader:before,
+.loader:after {
+  position: absolute;
+  display: block;
+  content: "";
+  animation: load 1.8s ease-in-out infinite;
+  height: 10px;
+
+  border-radius: var(--br);
+}
+
+.loader:before {
+  top: -20px;
+  left: 10px;
+  width: 40px;
+
+  background: var(--color-8);
+}
+
+.loader:after {
+  bottom: -20px;
+  width: 35px;
+
+  background: var(--color-10);
+}
+
+@keyframes load {
+  0% {
+    transform: translateX(40px);
+  }
+
+  50% {
+    transform: translateX(-30px);
+  }
+
+  100% {
+    transform: translateX(40px);
+  }
+}
+
+/* User */
+.kids ._user ._iconuser {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+
+  font-size: 2.5rem;
+}
+
+.kids ._user ._photo {
+  border: var(--border);
+  border-radius: var(--br);
+
+  width: 10rem;
+  height: 10rem;
+
+  object-fit: cover;
+  object-position: top;
+
+  margin: auto;
+}
+
+/* 404 Error Page */
+._np h1 {
+  font-size: 3rem;
+}
+
+._np ._btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.5rem;
+}
+
+/* Materias  */
+.kids ._materias ._textarea {
+  height: 8rem;
+}
+
+@media screen and (min-width: 375px) {
+
+  .kids ._turma ._card.alunos,
+  .kids ._dash ._card.admin,
+  .kids ._geaula ._card.aulas {
+    padding: 1.5rem;
+  }
+
+  /* Turmas */
+  .kids ._turma ._card.tools h2 {
+    font-size: 1.26rem;
+  }
+
+  .kids ._turma ._cnt p {
+    font-size: 1rem;
+  }
+}
