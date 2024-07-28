@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+
+@import url(./reset.css);
+@import url(./presets.css);
+@import url(./cards.css);
+
+@import url(./forms.css);
+
+:root {
+  /* Color's */
+  --color-1: #fff5f0;
+  --color-2: #fffcfa;
+  --color-3: #f3eaf4;
+  --color-4: #f1d4be;
+  --color-5: #4c4c4c;
+  --color-6: #262626;
+  --color-7: #9db9dd;
+  --color-8: #38b6ff;
+  --color-9: #df91ab;
+  --color-10: #ff66c4;
+  --color-11: #ff9559;
+  --color-12: #ffc4a1;
+  --color-13: #a5a5a5;
+
+  /* Font's */
+  --h1: 700 1.62rem "Outfit", Arial, Sans-serif;
+  --h2: 600 1.5rem "Outfit", Arial, Sans-serif;
+  --h3: 500 1.3rem "Outfit", Arial, Sans-serif;
+  --h4: 500 1.15rem "Outfit", Arial, Sans-serif;
+  --text-primary: 400 1rem "Outfit", Arial, Sans-serif;
+  --text-secondary: 500 1rem "Outfit", Arial, Sans-serif;
+  --text-tertiary: 400 0.87rem "Outfit", Arial, Sans-serif;
+  --text-detail: 400 0.87rem "Outfit", Arial, Sans-serif;
+
+  /* Other's */
+  --scroll-bar-color: #ffae80;
+  --scroll-bar-background: #fff5f0;
+
+  --overlay: #0000003d;
+
+  --br: 10px;
+  --space: 0.5rem;
+  --card-space: 0 .5rem 0 1rem;
+  --border: 2px solid var(--color-6);
+  --transition: all 0.5s;
+  --outline: 2px dotted var(--color-11);
+}
+
+/* Titles Presets */
+h1 {
+  font: var(--h1);
+}
+
+h2 {
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+h4 {
+  font: var(--h4);
+}
+
+/* ! Scroll Bar */
+/** The CSS code you provided is responsible for styling the scroll bar in a web page. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-background);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scroll-bar-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-color);
+  border-radius: 20px;
+  border: 4px solid var(--scroll-bar-background);
+}
+
+/* Presets */
+
+._ops {
+  align-items: center;
+
+  color: var(--color-13);
+}
+
+._ops svg {
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 425px) {
+  ._btn.min {
+    width: 159px;
+  }
+}

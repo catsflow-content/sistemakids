@@ -1,0 +1,58 @@
+/** Outhers`s */
+._disable {
+  cursor: not-allowed;
+}
+
+/** Menu*/
+.kids ._menu {
+  background: var(--color-2);
+
+  border: var(--border);
+  border-radius: var(--br);
+
+  font-size: 1.15rem;
+
+  width: 9rem;
+  z-index: 1;
+
+  width: max-content;
+}
+
+.kids ._menu ._opt {
+  padding: 0.8rem;
+
+  border-bottom: var(--border);
+
+  display: flex;
+  align-items: center;
+
+  gap: .5rem;
+}
+
+.kids ._menu ._opt:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.kids ._menu ._opt:last-child {
+  border-radius: 0 0 10px 10px;
+  border-bottom: none;
+}
+
+.kids ._dash ._menu ._opt.p1 {
+  display: none;
+}
+
+.kids ._menu ._opt.p1 {
+  display: flex;
+}
+
+.kids ._menu ._opt:hover {
+  transition: var(--transition);
+  background-color: var(--color-11);
+}
+
+@media screen and (min-width: 425px) {
+  .kids ._card.min {
+    padding: 1.5rem;
+  }
+}
