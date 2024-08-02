@@ -1,18 +1,26 @@
 export const sections = [
   {
+    title: "<!-- B1.3.2 -->",
+    items: [
+      "Melhoria: Quando a chamada é registrada com sucesso o usuário é redirecioando para visualizar a chamada. (SK-118);",
+      "Correção: Página de visualizar chamada do maternal estava fazendo requisição para a chamada do juniores. (SK-142);",
+      "Correção: Logo do Ministério Kids não está aparecendo. (SK-141);",
+    ]
+  },
+  {
     title: "<!-- B1.3.1 -->",
     items: [
-      "Melhroia: Páginas de gerenciar alunos e chamadas das turmas reformuladas para usar nova lógica de verificação de permissão. (SK-137)",
-      "Melhroia: Páginas de gerenciar alunos e chamadas das turmas reformuladas para usarem componente de botão de páginação. (SK-139)",
-      "Melhroia: Estrotura de pastas do src reorganizado. (SK-132)",
-      "Melhroia: Toast criado para substituir página de alteração de senha do usuário, tanto para a página de conta e gerenciar usuários. (SK-136 & SK-135)",
-      "Melhroia: Lógica de páginação universal criada. (SK-134)",
-      "Correção: Erro nas estilização da foto de perfil corrigidos. (SK-123)",
-      "Correção: Erro nos espaçamentos e larguras dos menus corrigidos. (SK-122)",
-      "Melhoria: Lógica de paginação adicionado nas páginas de gerenciar usuários, chamadas e alunos. (SK-120)",
-      "Correção: Erro nas aspas da importação do servidor no gráfico da presença da turma do maternal corrigido. (SK-125)",
-      "Correção: Mensagem de sem chamadas aparece novamente. (SK-121)",
-      "Melhoria: Mensagens de sem alunos, chamadas e usuários reunidas no arquivo events.tsx. (SK-127)",
+      "Melhoria: Páginas de gerenciar alunos e chamadas das turmas reformuladas para usar nova lógica de verificação de permissão. (SK-137);",
+      "Melhoria: Páginas de gerenciar alunos e chamadas das turmas reformuladas para usarem componente de botão de paginação. (SK-139);",
+      "Melhoria: Estortura de pastas do src reorganizado. (SK-132);",
+      "Melhoria: Toast criado para substituir página de alteração de senha do usuário, tanto para a página de conta e gerenciar usuários. (SK-136 & SK-135);",
+      "Melhoria: Lógica de paginação universal criada. (SK-134);",
+      "Correção: Erro nas estilizações da foto de perfil corrigidos. (SK-123);",
+      "Correção: Erro nos espaçamentos e larguras dos menus corrigidos. (SK-122);",
+      "Melhoria: Lógica de paginação adicionado nas páginas de gerenciar usuários, chamadas e alunos. (SK-120);",
+      "Correção: Erro nas aspas da importação do servidor no gráfico da presença da turma do maternal corrigido. (SK-125);",
+      "Correção: Mensagem de sem chamadas aparece novamente. (SK-121);",
+      "Melhoria: Mensagens de sem alunos, chamadas e usuários reunidas no arquivo events.tsx. (SK-127);",
     ]
   },
   {

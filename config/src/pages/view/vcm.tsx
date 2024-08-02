@@ -66,7 +66,7 @@ export function VCM() {
 
   const fetchChamada = async (id: string) => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_SERVIDOR_URL}/chamadas/gerenciar/juniores/${id}`);
+      const response = await fetch(`${import.meta.env.VITE_SERVIDOR_URL}/chamadas/gerenciar/maternal/${id}`);
       if (response.ok) {
         const data = await response.json();
         console.log('Fetched data:', data);
@@ -98,7 +98,7 @@ export function VCM() {
     };
 
     try {
-      await axios.put(`${import.meta.env.VITE_SERVIDOR_URL}/chamadas/update/juniores/${chamadaId}`, {
+      await axios.put(`${import.meta.env.VITE_SERVIDOR_URL}/chamadas/update/maternal/${chamadaId}`, {
         chamada: chamadaComDataISO,
         alunos,
       });

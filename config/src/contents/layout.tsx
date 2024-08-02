@@ -28,7 +28,7 @@ export function Header() {
 
   return (
     <header className={`_header${isAuthenticated ? '' : ' _jcenter'}`}>
-      <img src="/config/assets/logotipo.svg" alt="Logotipo do Ministério Kids" width="112px" height="78.84px" />
+      <img src="/config/assets/logotipo.png" alt="Logotipo do Ministério Kids" width="112px" height="78.84px" />
       {isAuthenticated && (
         <nav>
           <button type="submit" title="Retornar para página anterior" className="_btn return" onClick={ReturnPage}>
@@ -70,7 +70,7 @@ export function Footer() {
       <span>
         <span>
           <GitBranch />
-          B1.3.1
+          B1.3.2
         </span>
       </span>
     </footer>
