@@ -113,7 +113,26 @@ export function Juniores() {
       });
 
       if (!response.ok) throw new Error('Erro ao cadastrar aula');
+
+      const data = await response.json();
+      if (!data.message) throw new Error('Erro na resposta do servidor');
+
+      const lastChamadaResponse = await fetch(`${import.meta.env.VITE_SERVIDOR_URL}/chamadas/last/juniores`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!lastChamadaResponse.ok) throw new Error('Erro ao buscar a última chamada registrada');
+
+      const lastChamadaData = await lastChamadaResponse.json();
+      if (!lastChamadaData.id) throw new Error('ID da última chamada não retornado');
+
+      sessionStorage.setItem('CJID', lastChamadaData.id.toString());
       setAlertas([{ status: 'success', mensagem: 'Aula cadastrada com sucesso' }]);
+
+      window.location.href = '/turma/juniores/chamada/view';
     } catch (error) {
       const errorMessage = (error as Error).message;
       setAlertas([{ status: 'error', mensagem: errorMessage }]);

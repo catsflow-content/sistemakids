@@ -17,7 +17,7 @@ export async function verifyToken(): Promise<boolean> {
   }
 }
 
-//* Função de verificação de permissão
+//* Função de verificação de Tokens
 export async function verifyPermission(): Promise<string> {
   const userId = localStorage.getItem('userId');
   if (!userId) {

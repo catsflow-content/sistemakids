@@ -7,12 +7,14 @@
   -webkit-user-select: none;
   user-select: none;
 
-  margin: auto;
-  max-width: 425px;
-
   height: 100vh;
 
   position: relative;
+}
+
+.kids ._body {
+  margin: auto;
+  max-width: 425px;
 }
 
 .kids ._hw {

@@ -48,18 +48,18 @@ export function GTM() {
   useEffect(() => {
     const userId = localStorage.getItem('userId');
     if (userId) {
-      verifyPermissions(userId);
+      verifyPermissions();
     }
   }, []);
-
-  const verifyPermissions = async (userId: string) => {
+  
+  const verifyPermissions = async () => {
     try {
-      const permission = await verifyPermission(userId);
+      const permission = await verifyPermission();
       setIsAdmin(permission === 'administrador');
     } catch (error) {
       setAlerta({ status: 'error', mensagem: 'Erro ao verificar permissões do usuário.' });
     }
-  };
+  };  
 
   const handleFiltroSexoChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setFiltroSexo(event.target.value);
