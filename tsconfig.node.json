@@ -3,17 +3,13 @@
     "jsx": "react",
     "composite": true,
     "skipLibCheck": true,
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "module": "CommonJS", // Altere para CommonJS, pois o Node.js usa esse formato de módulo
+    "moduleResolution": "node", // Use 'node' para resolver os módulos do Node.js
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "target": "ESNext",
-    "lib": ["ESNext", "DOM"],
-    "resolveJsonModule": true,
-    "strict": true, // Adicionando a opção strict
-    "forceConsistentCasingInFileNames": true // Adicionando a opção forceConsistentCasingInFileNames
+    "esModuleInterop": true, // Permita a importação de módulos ES6 como módulos CommonJS
+    "target": "ESNext", // Pode manter ESNext ou ajustar conforme necessário
+    "lib": ["ESNext", "DOM"], // Adicione "DOM" para suporte ao acesso ao DOM, se necessário
+    "resolveJsonModule": true
   },
-  "include": [
-    "./config/"
-  ]
+  "include": ["config/src/"]
 }
